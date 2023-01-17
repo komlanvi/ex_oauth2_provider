@@ -1,7 +1,7 @@
 defmodule ExOauth2Provider.Mixfile do
   use Mix.Project
 
-  @version "0.5.6"
+  @version "0.6.0"
 
   def project do
     [
@@ -34,17 +34,17 @@ defmodule ExOauth2Provider.Mixfile do
 
   defp deps do
     [
-      {:ecto, "~> 3.0"},
+      {:ecto, "~> 3.9"},
       {:plug, ">= 1.5.0 and < 2.0.0"},
 
       # Dev and test dependencies
-      {:credo, "~> 1.1.0", only: [:dev, :test]},
+      {:credo, "~> 1.6", only: [:dev, :test]},
 
       {:ex_doc, ">= 0.0.0", only: :dev},
 
-      {:ecto_sql, "~> 3.0.0", only: :test},
-      {:plug_cowboy, "~> 2.0", only: :test},
-      {:postgrex, "~> 0.14", only: :test}]
+      {:ecto_sql, "~> 3.9", only: [:dev, :test]},
+      {:plug_cowboy, "~> 2.6", only: :test},
+      {:postgrex, "~> 0.16", only: :test}]
   end
 
   defp package do

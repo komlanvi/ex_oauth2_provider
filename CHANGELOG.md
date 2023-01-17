@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.0
+
+* Update dependencies to latest version.
+* Removed null option from schema fields.
+
 ## v0.5.7 (TBA)
 
 * Permit native application redirect uri
